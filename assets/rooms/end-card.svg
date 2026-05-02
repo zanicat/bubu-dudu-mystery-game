@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe8d6"/>
+      <stop offset="1" stop-color="#fbc8a3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0" stop-color="#fff5cf" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff5cf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#sky)"/>
+  <ellipse cx="800" cy="500" rx="700" ry="380" fill="url(#glow)"/>
+
+  <!-- Ground -->
+  <ellipse cx="800" cy="900" rx="700" ry="60" fill="#f7d09e" opacity="0.6"/>
+
+  <!-- Stars and hearts -->
+  <g fill="#fff" opacity="0.8">
+    <text x="200" y="180" font-size="40">✦</text>
+    <text x="1380" y="220" font-size="44">✦</text>
+    <text x="260" y="380" font-size="28">✦</text>
+    <text x="1340" y="420" font-size="32">✦</text>
+    <text x="120" y="640" font-size="36">✦</text>
+    <text x="1460" y="660" font-size="36">✦</text>
+  </g>
+
+  <g fill="#e88da6" opacity="0.9">
+    <text x="380" y="220" font-size="44">♡</text>
+    <text x="1180" y="180" font-size="44">♡</text>
+    <text x="220" y="500" font-size="36">♡</text>
+    <text x="1380" y="540" font-size="36">♡</text>
+  </g>
+
+  <!-- Big "Thank you!" text -->
+  <text x="800" y="240" text-anchor="middle" font-family="Comic Sans MS, Quicksand, sans-serif" font-size="92" fill="#a85a55" font-weight="bold">Thank you!</text>
+  <text x="800" y="310" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="38" fill="#7c5530">— from Bubu, Dudu &amp; the cats</text>
+
+  <!-- Soft platform -->
+  <ellipse cx="800" cy="800" rx="380" ry="42" fill="#f9c69b"/>
+</svg>

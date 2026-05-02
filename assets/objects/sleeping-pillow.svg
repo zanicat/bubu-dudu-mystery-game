@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" width="220" height="180">
+  <!-- pillow body -->
+  <path d="M 26 60 Q 14 50 24 36 Q 60 24 110 26 Q 160 24 196 36 Q 206 50 194 60 L 196 130 Q 206 144 196 158 Q 160 168 110 166 Q 60 168 24 158 Q 14 144 26 130 Z"
+        fill="#fef0f6" stroke="#c98ea8" stroke-width="4"/>
+  <!-- striped pattern -->
+  <line x1="60" y1="40" x2="60" y2="160" stroke="#e2a9b3" stroke-width="3" opacity="0.55"/>
+  <line x1="100" y1="36" x2="100" y2="162" stroke="#e2a9b3" stroke-width="3" opacity="0.55"/>
+  <line x1="140" y1="36" x2="140" y2="162" stroke="#e2a9b3" stroke-width="3" opacity="0.55"/>
+  <line x1="180" y1="40" x2="180" y2="160" stroke="#e2a9b3" stroke-width="3" opacity="0.55"/>
+  <!-- "Z" mark to suggest sleeping -->
+  <text x="160" y="56" font-family="Quicksand, sans-serif" font-size="20" font-weight="bold" fill="#a8728c">z</text>
+  <text x="172" y="44" font-family="Quicksand, sans-serif" font-size="14" font-weight="bold" fill="#a8728c">z</text>
+  <!-- tassel corners -->
+  <circle cx="22" cy="36" r="6" fill="#c98ea8"/>
+  <circle cx="198" cy="36" r="6" fill="#c98ea8"/>
+  <circle cx="22" cy="158" r="6" fill="#c98ea8"/>
+  <circle cx="198" cy="158" r="6" fill="#c98ea8"/>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- treat bag -->
+  <path d="M 50 60 L 50 170 Q 50 184 64 184 L 136 184 Q 150 184 150 170 L 150 60 L 140 50 L 60 50 Z"
+        fill="#f5b461" stroke="#7c4f1a" stroke-width="4"/>
+  <!-- top fold -->
+  <path d="M 50 60 L 100 80 L 150 60" fill="none" stroke="#7c4f1a" stroke-width="4"/>
+  <!-- label -->
+  <rect x="68" y="100" width="64" height="46" rx="6" fill="#fff" stroke="#7c4f1a" stroke-width="3"/>
+  <!-- cat face on label -->
+  <circle cx="100" cy="120" r="14" fill="#e8a460"/>
+  <polygon points="86,108 92,122 98,112" fill="#e8a460"/>
+  <polygon points="114,108 108,122 102,112" fill="#e8a460"/>
+  <circle cx="94" cy="120" r="2.4" fill="#3a2a1a"/>
+  <circle cx="106" cy="120" r="2.4" fill="#3a2a1a"/>
+  <text x="100" y="158" text-anchor="middle" font-size="12" font-family="Quicksand, sans-serif" font-weight="bold" fill="#7c4f1a">TREATS</text>
+  <!-- shine -->
+  <ellipse cx="80" cy="78" rx="8" ry="3" fill="#fff" opacity="0.6"/>
+</svg>

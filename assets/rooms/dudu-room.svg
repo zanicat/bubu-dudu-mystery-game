@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fceee0"/>
+      <stop offset="1" stop-color="#f7d7c0"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c89d70"/>
+      <stop offset="1" stop-color="#a87a4f"/>
+    </linearGradient>
+    <linearGradient id="bed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3f3"/>
+      <stop offset="1" stop-color="#ffd9d9"/>
+    </linearGradient>
+    <linearGradient id="blanket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7a7a7"/>
+      <stop offset="1" stop-color="#e88080"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfeaff"/>
+      <stop offset="1" stop-color="#a4d3f5"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d2a679"/>
+      <stop offset="1" stop-color="#a47148"/>
+    </linearGradient>
+    <pattern id="floorPlanks" x="0" y="0" width="120" height="40" patternUnits="userSpaceOnUse">
+      <rect width="120" height="40" fill="url(#floor)"/>
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#7c5530" stroke-width="2" opacity="0.4"/>
+      <line x1="0" y1="40" x2="120" y2="40" stroke="#7c5530" stroke-width="1.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Wall -->
+  <rect x="0" y="0" width="1600" height="700" fill="url(#wall)"/>
+  <!-- Floor -->
+  <rect x="0" y="700" width="1600" height="300" fill="url(#floorPlanks)"/>
+  <!-- Wall/floor edge -->
+  <line x1="0" y1="700" x2="1600" y2="700" stroke="#a87a4f" stroke-width="3"/>
+
+  <!-- Window (left) -->
+  <g>
+    <rect x="120" y="80" width="320" height="240" rx="14" fill="#fff" stroke="#9c6f4a" stroke-width="6"/>
+    <rect x="135" y="95" width="290" height="210" rx="6" fill="url(#window)"/>
+    <line x1="280" y1="95" x2="280" y2="305" stroke="#9c6f4a" stroke-width="5"/>
+    <line x1="135" y1="200" x2="425" y2="200" stroke="#9c6f4a" stroke-width="5"/>
+    <!-- Cloud -->
+    <ellipse cx="200" cy="160" rx="36" ry="20" fill="#fff" opacity="0.9"/>
+    <ellipse cx="232" cy="155" rx="28" ry="18" fill="#fff" opacity="0.9"/>
+    <!-- Sun rays -->
+    <circle cx="370" cy="150" r="22" fill="#ffe28a" opacity="0.85"/>
+  </g>
+
+  <!-- Curtains -->
+  <path d="M 80 70 Q 110 320 130 320 L 130 80 Z" fill="#e2a9b3"/>
+  <path d="M 460 70 Q 430 320 410 320 L 410 80 Z" fill="#e2a9b3"/>
+
+  <!-- Wall art: cat picture frame (right side) -->
+  <g transform="translate(1180,120)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#fff" stroke="#7c5530" stroke-width="6"/>
+    <rect x="14" y="14" width="152" height="112" fill="#ffe9c8"/>
+    <!-- simple cat face -->
+    <circle cx="90" cy="78" r="36" fill="#e8a460"/>
+    <polygon points="62,52 70,78 80,62" fill="#e8a460"/>
+    <polygon points="118,52 110,78 100,62" fill="#e8a460"/>
+    <circle cx="78" cy="76" r="4" fill="#3a2a1a"/>
+    <circle cx="102" cy="76" r="4" fill="#3a2a1a"/>
+    <path d="M 86 88 Q 90 92 94 88" stroke="#3a2a1a" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Shelf with cat figurines (treats hide here) -->
+  <g>
+    <rect x="540" y="200" width="380" height="14" fill="#7c5530"/>
+    <rect x="540" y="210" width="380" height="6" fill="#5a3e22"/>
+    <!-- figurine 1 -->
+    <ellipse cx="600" cy="190" rx="22" ry="14" fill="#e8a460"/>
+    <circle cx="600" cy="170" r="18" fill="#e8a460"/>
+    <polygon points="586,158 590,172 598,160" fill="#e8a460"/>
+    <polygon points="614,158 610,172 602,160" fill="#e8a460"/>
+    <!-- figurine 2 (different color) -->
+    <ellipse cx="700" cy="190" rx="22" ry="14" fill="#a4a4a4"/>
+    <circle cx="700" cy="170" r="18" fill="#a4a4a4"/>
+    <!-- a tiny plant -->
+    <rect x="780" y="170" width="40" height="34" rx="4" fill="#bb6b4a"/>
+    <ellipse cx="800" cy="160" rx="22" ry="18" fill="#7fb86d"/>
+    <ellipse cx="788" cy="150" rx="14" ry="12" fill="#9fcb87"/>
+    <ellipse cx="812" cy="148" rx="14" ry="12" fill="#9fcb87"/>
+    <!-- jar -->
+    <rect x="860" y="172" width="40" height="32" rx="4" fill="#cdd9e6"/>
+    <rect x="858" y="166" width="44" height="10" rx="3" fill="#7c5530"/>
+  </g>
+
+  <!-- Cat tower (orange cat hides here) -->
+  <g>
+    <rect x="990" y="380" width="140" height="320" rx="10" fill="url(#tower)"/>
+    <rect x="950" y="700" width="220" height="20" fill="#7c5530"/>
+    <!-- platform top -->
+    <rect x="970" y="370" width="180" height="20" rx="4" fill="#7c5530"/>
+    <!-- circular hole -->
+    <ellipse cx="1060" cy="540" rx="44" ry="46" fill="#5a3e22"/>
+    <!-- toy ball -->
+    <circle cx="1145" cy="690" r="14" fill="#ed7d8a"/>
+  </g>
+
+  <!-- Bed (white-markings cat hides here) -->
+  <g>
+    <!-- bedframe -->
+    <rect x="1200" y="540" width="370" height="200" rx="12" fill="#9c6f4a"/>
+    <!-- mattress -->
+    <rect x="1210" y="500" width="350" height="100" rx="14" fill="url(#bed)"/>
+    <!-- blanket -->
+    <rect x="1240" y="540" width="320" height="80" rx="10" fill="url(#blanket)"/>
+    <!-- pillow -->
+    <rect x="1230" y="478" width="120" height="54" rx="14" fill="#fff5f0" stroke="#e2c2b3" stroke-width="3"/>
+    <rect x="1245" y="488" width="90" height="8" rx="3" fill="#f0d8cc" opacity="0.7"/>
+    <!-- a couple stars on pillow -->
+    <text x="1280" y="520" font-size="20" fill="#e2a9b3">✦</text>
+  </g>
+
+  <!-- Rug -->
+  <g>
+    <ellipse cx="700" cy="860" rx="280" ry="60" fill="#eebfa4"/>
+    <ellipse cx="700" cy="860" rx="220" ry="42" fill="#fcdec5"/>
+    <ellipse cx="700" cy="860" rx="160" ry="28" fill="#eebfa4"/>
+  </g>
+
+  <!-- Desk on left -->
+  <g>
+    <rect x="150" y="610" width="300" height="14" fill="#7c5530"/>
+    <rect x="180" y="624" width="20" height="100" fill="#9c6f4a"/>
+    <rect x="400" y="624" width="20" height="100" fill="#9c6f4a"/>
+    <!-- lamp -->
+    <rect x="210" y="560" width="6" height="50" fill="#7c5530"/>
+    <polygon points="190,560 236,560 226,540 200,540" fill="#ffcf75"/>
+    <!-- book stack -->
+    <rect x="290" y="580" width="80" height="14" fill="#a4c47b"/>
+    <rect x="294" y="566" width="74" height="14" fill="#e2a9b3"/>
+    <rect x="298" y="552" width="68" height="14" fill="#7e9ec9"/>
+  </g>
+
+  <!-- Soft floating sparkles for cozy mood -->
+  <g opacity="0.65" fill="#fff">
+    <circle cx="300" cy="420" r="3"/>
+    <circle cx="860" cy="320" r="3"/>
+    <circle cx="1100" cy="280" r="2.5"/>
+    <circle cx="540" cy="500" r="2.5"/>
+    <circle cx="1500" cy="430" r="3"/>
+  </g>
+</svg>

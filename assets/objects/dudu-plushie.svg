@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- body -->
+  <ellipse cx="100" cy="160" rx="62" ry="50" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <!-- belly -->
+  <ellipse cx="100" cy="170" rx="40" ry="30" fill="#cfa884"/>
+  <!-- head -->
+  <circle cx="100" cy="92" r="58" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <!-- ears -->
+  <path d="M 56 56 L 50 22 L 84 44 Z" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <path d="M 144 56 L 150 22 L 116 44 Z" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <path d="M 60 50 L 58 32 L 76 44 Z" fill="#e4b89a"/>
+  <path d="M 140 50 L 142 32 L 124 44 Z" fill="#e4b89a"/>
+  <!-- face features -->
+  <ellipse cx="78" cy="92" rx="6" ry="8" fill="#2e1f12"/>
+  <ellipse cx="122" cy="92" rx="6" ry="8" fill="#2e1f12"/>
+  <ellipse cx="78" cy="88" rx="2" ry="2" fill="#fff"/>
+  <ellipse cx="122" cy="88" rx="2" ry="2" fill="#fff"/>
+  <!-- nose -->
+  <ellipse cx="100" cy="108" rx="6" ry="4" fill="#2e1f12"/>
+  <!-- mouth -->
+  <path d="M 88 116 Q 100 124 112 116" stroke="#2e1f12" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- cheek blush -->
+  <circle cx="64" cy="106" r="8" fill="#f0a8a0" opacity="0.6"/>
+  <circle cx="136" cy="106" r="8" fill="#f0a8a0" opacity="0.6"/>
+  <!-- arms -->
+  <ellipse cx="50" cy="160" rx="14" ry="22" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <ellipse cx="150" cy="160" rx="14" ry="22" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <!-- feet -->
+  <ellipse cx="76" cy="208" rx="16" ry="10" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <ellipse cx="124" cy="208" rx="16" ry="10" fill="#a87b5c" stroke="#5e4830" stroke-width="3"/>
+  <!-- bow tie (cute plushie touch) -->
+  <path d="M 84 138 L 100 144 L 116 138 L 116 152 L 100 146 L 84 152 Z" fill="#e2a9b3" stroke="#7c4f6a" stroke-width="2"/>
+  <circle cx="100" cy="145" r="3" fill="#7c4f6a"/>
+</svg>
