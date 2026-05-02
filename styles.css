@@ -251,6 +251,38 @@ img { user-select: none; -webkit-user-drag: none; }
   height: 100%;
   object-fit: fill;
 }
+.room-deco {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.22));
+  transition: transform 90ms ease;
+}
+.room-deco:hover { transform: scale(1.04); }
+
+.deco-label {
+  position: absolute;
+  transform: translate(-50%, -130%);
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 2px solid #f0c898;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 9;
+  animation: decoLabelFade 750ms ease forwards;
+}
+@keyframes decoLabelFade {
+  0%   { opacity: 0; transform: translate(-50%, -110%) scale(0.8); }
+  20%  { opacity: 1; transform: translate(-50%, -135%) scale(1.05); }
+  60%  { opacity: 1; transform: translate(-50%, -140%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -160%) scale(0.95); }
+}
+
 .hidden-obj {
   position: absolute;
   cursor: pointer;

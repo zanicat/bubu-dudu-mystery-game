@@ -57,3 +57,11 @@ export function playMiss() {
   if (!c) return;
   playNote(220, c.currentTime, 0.08, 'sine', 0.04);
 }
+
+export function playDecoTap() {
+  const c = getCtx();
+  if (!c) return;
+  const t0 = c.currentTime;
+  playNote(1320, t0, 0.06, 'triangle', 0.05);
+  playNote(1760, t0 + 0.02, 0.05, 'triangle', 0.035);
+}

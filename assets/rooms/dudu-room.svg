@@ -139,6 +139,220 @@
     <rect x="298" y="552" width="68" height="14" fill="#7e9ec9"/>
   </g>
 
+  <!-- ===== EXTRA CLUTTER ===== -->
+
+  <!-- Window valance / pelmet -->
+  <rect x="80" y="56" width="380" height="22" rx="4" fill="#c98ea8" stroke="#7c4f6a" stroke-width="3"/>
+  <path d="M 80 78 L 110 96 L 140 78 L 170 96 L 200 78 L 230 96 L 260 78 L 290 96 L 320 78 L 350 96 L 380 78 L 410 96 L 440 78" fill="none" stroke="#7c4f6a" stroke-width="2"/>
+
+  <!-- Small wall poster left of window -->
+  <g transform="translate(36,140)">
+    <rect x="0" y="0" width="60" height="84" rx="3" fill="#fff" stroke="#7c5530" stroke-width="3"/>
+    <rect x="6" y="6" width="48" height="56" fill="#a4c47b"/>
+    <circle cx="30" cy="30" r="14" fill="#f5b461"/>
+    <text x="30" y="78" text-anchor="middle" font-size="9" font-family="serif" font-weight="bold" fill="#7c5530">CATS</text>
+  </g>
+
+  <!-- Wall clock above existing shelf (placed to the right of the shelf items) -->
+  <g transform="translate(820,108)">
+    <circle cx="40" cy="40" r="36" fill="#fff" stroke="#7c5530" stroke-width="4"/>
+    <circle cx="40" cy="40" r="28" fill="#fff8eb" stroke="#7c5530" stroke-width="2"/>
+    <line x1="40" y1="40" x2="40" y2="20" stroke="#3a2a1a" stroke-width="3"/>
+    <line x1="40" y1="40" x2="56" y2="46" stroke="#3a2a1a" stroke-width="2.5"/>
+    <circle cx="40" cy="40" r="3" fill="#a85a55"/>
+    <text x="40" y="14" text-anchor="middle" font-size="8" font-family="serif" font-weight="bold" fill="#3a2a1a">12</text>
+  </g>
+
+  <!-- A second small wall shelf BELOW the existing one, with more items -->
+  <g>
+    <rect x="540" y="280" width="380" height="10" fill="#7c5530"/>
+    <rect x="540" y="288" width="380" height="4" fill="#5a3e22"/>
+    <!-- mug -->
+    <rect x="568" y="248" width="30" height="32" rx="4" fill="#7e9ec9" stroke="#2a4a7c" stroke-width="2"/>
+    <path d="M 596 256 Q 612 256 612 268 Q 612 278 596 276" fill="none" stroke="#2a4a7c" stroke-width="3"/>
+    <!-- stack of books -->
+    <rect x="620" y="262" width="56" height="14" fill="#d96b6b" stroke="#7c2a2a" stroke-width="2"/>
+    <rect x="624" y="248" width="48" height="14" fill="#a4c47b" stroke="#3a5a2a" stroke-width="2"/>
+    <rect x="628" y="234" width="40" height="14" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+    <!-- ball of yarn (decorative — different color from findable) -->
+    <circle cx="710" cy="262" r="18" fill="#7e9ec9" stroke="#2a4a7c" stroke-width="2"/>
+    <path d="M 692 258 Q 710 250 728 262" stroke="#2a4a7c" stroke-width="2" fill="none"/>
+    <path d="M 694 268 Q 712 264 728 270" stroke="#2a4a7c" stroke-width="2" fill="none"/>
+    <!-- another figurine -->
+    <ellipse cx="770" cy="270" rx="18" ry="12" fill="#3a2a1a"/>
+    <circle cx="770" cy="252" r="14" fill="#3a2a1a"/>
+    <polygon points="758,242 762,254 770,244" fill="#3a2a1a"/>
+    <polygon points="782,242 778,254 770,244" fill="#3a2a1a"/>
+    <!-- pot of pencils -->
+    <rect x="820" y="248" width="32" height="34" rx="3" fill="#e2a9b3" stroke="#7c4f6a" stroke-width="2"/>
+    <rect x="824" y="232" width="3" height="20" fill="#f3d985"/>
+    <rect x="830" y="226" width="3" height="26" fill="#a4c47b"/>
+    <rect x="836" y="230" width="3" height="22" fill="#7e9ec9"/>
+    <rect x="842" y="228" width="3" height="24" fill="#d96b6b"/>
+    <!-- jar -->
+    <rect x="876" y="252" width="34" height="32" rx="4" fill="#cdd9e6"/>
+    <rect x="874" y="244" width="38" height="10" rx="3" fill="#7c5530"/>
+  </g>
+
+  <!-- Tall bookshelf top-right corner -->
+  <g>
+    <rect x="1420" y="80" width="170" height="380" rx="6" fill="#7c5530" stroke="#3a2a1a" stroke-width="3"/>
+    <rect x="1428" y="88" width="154" height="364" fill="#a47148"/>
+    <line x1="1428" y1="160" x2="1582" y2="160" stroke="#3a2a1a" stroke-width="3"/>
+    <line x1="1428" y1="240" x2="1582" y2="240" stroke="#3a2a1a" stroke-width="3"/>
+    <line x1="1428" y1="320" x2="1582" y2="320" stroke="#3a2a1a" stroke-width="3"/>
+    <line x1="1428" y1="400" x2="1582" y2="400" stroke="#3a2a1a" stroke-width="3"/>
+    <!-- row 1 books -->
+    <g transform="translate(1438,96)">
+      <rect x="0"  y="0" width="14" height="60" fill="#d96b6b"/>
+      <rect x="16" y="0" width="14" height="60" fill="#7e9ec9"/>
+      <rect x="32" y="0" width="14" height="60" fill="#a4c47b"/>
+      <rect x="48" y="0" width="14" height="60" fill="#e2a9b3"/>
+      <rect x="64" y="0" width="14" height="60" fill="#f3d985"/>
+      <rect x="80" y="0" width="14" height="60" fill="#7e9ec9"/>
+      <rect x="96" y="0" width="14" height="60" fill="#d96b6b"/>
+      <rect x="112" y="0" width="14" height="60" fill="#a4c47b"/>
+      <rect x="128" y="0" width="14" height="60" fill="#a880cf"/>
+    </g>
+    <!-- row 2 books with a tilt -->
+    <g transform="translate(1438,176)">
+      <rect x="0"  y="0" width="14" height="60" fill="#7e9ec9"/>
+      <rect x="16" y="0" width="14" height="60" fill="#f3d985"/>
+      <rect x="32" y="0" width="14" height="60" fill="#a4c47b"/>
+      <rect x="48" y="6" width="14" height="54" fill="#e88da6" transform="rotate(8 55 36)"/>
+      <rect x="68" y="0" width="14" height="60" fill="#d96b6b"/>
+      <rect x="84" y="0" width="14" height="60" fill="#7e9ec9"/>
+      <rect x="100" y="0" width="40" height="60" fill="#a880cf"/>
+    </g>
+    <!-- row 3 books and figurine -->
+    <g transform="translate(1438,256)">
+      <rect x="0"  y="0" width="14" height="60" fill="#d96b6b"/>
+      <rect x="16" y="0" width="14" height="60" fill="#a4c47b"/>
+      <rect x="32" y="0" width="14" height="60" fill="#f3d985"/>
+      <!-- cat figurine -->
+      <ellipse cx="64" cy="50" rx="14" ry="10" fill="#fff"/>
+      <circle cx="64" cy="34" r="11" fill="#fff" stroke="#7c5530" stroke-width="2"/>
+      <polygon points="56,28 60,38 66,30" fill="#fff" stroke="#7c5530" stroke-width="1.5"/>
+      <polygon points="72,28 68,38 62,30" fill="#fff" stroke="#7c5530" stroke-width="1.5"/>
+      <circle cx="60" cy="34" r="2" fill="#1a1208"/>
+      <circle cx="68" cy="34" r="2" fill="#1a1208"/>
+      <rect x="92" y="0" width="14" height="60" fill="#7e9ec9"/>
+      <rect x="108" y="0" width="14" height="60" fill="#e2a9b3"/>
+      <rect x="124" y="0" width="14" height="60" fill="#a880cf"/>
+    </g>
+    <!-- row 4 — picture frame and items -->
+    <g transform="translate(1438,336)">
+      <rect x="0" y="10" width="36" height="50" fill="#7c5530"/>
+      <rect x="4" y="14" width="28" height="42" fill="#fff5da"/>
+      <circle cx="18" cy="34" r="10" fill="#a87b5c"/>
+      <rect x="44" y="0" width="14" height="60" fill="#a4c47b"/>
+      <rect x="60" y="0" width="14" height="60" fill="#d96b6b"/>
+      <!-- plant -->
+      <rect x="84" y="40" width="20" height="20" fill="#bb6b4a"/>
+      <ellipse cx="94" cy="36" rx="14" ry="10" fill="#7fb86d"/>
+      <ellipse cx="86" cy="32" rx="8" ry="8" fill="#9fcb87"/>
+      <ellipse cx="102" cy="30" rx="8" ry="8" fill="#9fcb87"/>
+      <rect x="116" y="0" width="14" height="60" fill="#f3d985"/>
+      <rect x="132" y="0" width="14" height="60" fill="#7e9ec9"/>
+    </g>
+    <!-- row 5 (bottom shelf, items) -->
+    <g transform="translate(1438,416)">
+      <rect x="0" y="0" width="40" height="36" rx="4" fill="#cdd9e6"/>
+      <rect x="-2" y="-6" width="44" height="10" rx="3" fill="#7c5530"/>
+      <ellipse cx="70" cy="22" rx="22" ry="14" fill="#e8a460"/>
+      <circle cx="70" cy="6" r="11" fill="#e8a460"/>
+      <polygon points="60,-2 64,8 70,0" fill="#e8a460"/>
+      <polygon points="80,-2 76,8 70,0" fill="#e8a460"/>
+      <rect x="100" y="0" width="14" height="36" fill="#d96b6b"/>
+      <rect x="116" y="4" width="14" height="32" fill="#7e9ec9"/>
+      <rect x="132" y="2" width="14" height="34" fill="#a4c47b"/>
+    </g>
+  </g>
+
+  <!-- Toy chest under right wall (between picture frame and bed) -->
+  <g>
+    <rect x="1180" y="580" width="180" height="116" rx="10" fill="#a47148" stroke="#5a3e22" stroke-width="3"/>
+    <rect x="1180" y="580" width="180" height="20" fill="#7c5530"/>
+    <rect x="1260" y="572" width="20" height="14" rx="3" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+    <!-- toys peeking out -->
+    <circle cx="1200" cy="568" r="14" fill="#e88da6" stroke="#7c4f6a" stroke-width="2"/>
+    <rect x="1330" y="556" width="18" height="22" fill="#7e9ec9" stroke="#2a4a7c" stroke-width="2"/>
+    <ellipse cx="1339" cy="572" rx="6" ry="3" fill="#fff" opacity="0.5"/>
+    <!-- chest panel decoration -->
+    <rect x="1196" y="616" width="148" height="60" rx="6" fill="none" stroke="#7c5530" stroke-width="2"/>
+    <text x="1270" y="652" text-anchor="middle" font-size="14" font-family="serif" fill="#7c5530">★ TOYS ★</text>
+  </g>
+
+  <!-- Extend the existing shelf cat figurines area: add another tabby figurine -->
+  <g transform="translate(870,150)">
+    <ellipse cx="0" cy="50" rx="22" ry="14" fill="#7c5530"/>
+    <circle cx="0" cy="30" r="18" fill="#7c5530"/>
+    <polygon points="-14,18 -10,32 -2,20" fill="#7c5530"/>
+    <polygon points="14,18 10,32 2,20" fill="#7c5530"/>
+    <circle cx="-6" cy="32" r="2.5" fill="#fff"/>
+    <circle cx="6" cy="32" r="2.5" fill="#fff"/>
+  </g>
+
+  <!-- More items on existing desk surface (drawn at y=600 just above the desk top y=610) -->
+  <g>
+    <!-- desk drawer face -->
+    <rect x="220" y="624" width="160" height="40" rx="3" fill="#9c6f4a" stroke="#5a3e22" stroke-width="2"/>
+    <circle cx="300" cy="644" r="4" fill="#3a2a1a"/>
+    <!-- ink pot -->
+    <ellipse cx="380" cy="608" rx="14" ry="6" fill="#3a2a1a"/>
+    <rect x="370" y="586" width="20" height="22" rx="3" fill="#5a3a8a" stroke="#3a2a4a" stroke-width="2"/>
+    <!-- quill -->
+    <line x1="384" y1="594" x2="420" y2="546" stroke="#7c5530" stroke-width="3"/>
+    <path d="M 420 546 Q 426 538 432 552 Q 426 562 414 552 Z" fill="#fff" stroke="#7c5530" stroke-width="2"/>
+  </g>
+
+  <!-- Floor lamp in the corner near desk -->
+  <g>
+    <rect x="100" y="540" width="6" height="160" fill="#7c5530"/>
+    <rect x="84" y="704" width="38" height="6" fill="#7c5530"/>
+    <path d="M 60 540 L 146 540 L 134 506 L 72 506 Z" fill="#f3d985" stroke="#7c4f1a" stroke-width="3"/>
+    <ellipse cx="103" cy="540" rx="36" ry="6" fill="#ffe28a" opacity="0.6"/>
+  </g>
+
+  <!-- Globe by the desk -->
+  <g transform="translate(440,548)">
+    <rect x="-2" y="62" width="20" height="14" fill="#7c5530"/>
+    <line x1="8" y1="44" x2="8" y2="62" stroke="#7c5530" stroke-width="3"/>
+    <circle cx="8" cy="32" r="28" fill="#7e9ec9" stroke="#2a4a7c" stroke-width="3"/>
+    <path d="M -8 24 Q 0 18 14 24 Q 22 22 30 28 Q 26 38 14 36 Q 4 42 -10 36 Z" fill="#a4c47b"/>
+    <path d="M 4 12 Q 12 12 16 18 Q 12 22 4 18 Z" fill="#a4c47b"/>
+    <ellipse cx="-2" cy="22" rx="6" ry="3" fill="#fff" opacity="0.5"/>
+  </g>
+
+  <!-- A small piano / box on the floor by left wall -->
+  <g>
+    <rect x="6" y="780" width="86" height="120" rx="4" fill="#a85a55" stroke="#5a2a2a" stroke-width="3"/>
+    <rect x="6" y="780" width="86" height="14" fill="#7c2a2a"/>
+    <rect x="14" y="800" width="70" height="6" fill="#fff"/>
+    <rect x="14" y="810" width="70" height="6" fill="#fff"/>
+  </g>
+
+  <!-- Bunting / triangle flags across the wall -->
+  <g>
+    <line x1="500" y1="86" x2="1100" y2="100" stroke="#7c5530" stroke-width="2"/>
+    <polygon points="540,90 560,90 550,108" fill="#e88da6"/>
+    <polygon points="610,92 630,92 620,112" fill="#a4c47b"/>
+    <polygon points="680,94 700,94 690,114" fill="#7e9ec9"/>
+    <polygon points="750,96 770,96 760,116" fill="#f3d985"/>
+    <polygon points="820,98 840,98 830,118" fill="#e88da6"/>
+    <polygon points="890,98 910,98 900,118" fill="#a4c47b"/>
+    <polygon points="960,98 980,98 970,118" fill="#a880cf"/>
+    <polygon points="1030,100 1050,100 1040,120" fill="#e2a9b3"/>
+  </g>
+
+  <!-- A small framed photo on the wall above the bed -->
+  <g transform="translate(1310,420)">
+    <rect x="0" y="0" width="56" height="44" rx="3" fill="#fff" stroke="#7c5530" stroke-width="3"/>
+    <rect x="6" y="6" width="44" height="32" fill="#cfeaff"/>
+    <circle cx="22" cy="22" r="8" fill="#a87b5c"/>
+    <circle cx="38" cy="22" r="6" fill="#e8a460"/>
+  </g>
+
   <!-- Soft floating sparkles for cozy mood -->
   <g opacity="0.65" fill="#fff">
     <circle cx="300" cy="420" r="3"/>
@@ -146,5 +360,8 @@
     <circle cx="1100" cy="280" r="2.5"/>
     <circle cx="540" cy="500" r="2.5"/>
     <circle cx="1500" cy="430" r="3"/>
+    <circle cx="220" cy="200" r="2"/>
+    <circle cx="700" cy="480" r="2"/>
+    <circle cx="1240" cy="380" r="2.5"/>
   </g>
 </svg>

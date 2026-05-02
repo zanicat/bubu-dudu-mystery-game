@@ -1,7 +1,7 @@
 import { ROOMS } from '../data/rooms.js';
 import { OBJECTS } from '../data/objects.js';
 import { state } from '../state.js';
-import { playFindChime, playMiss, playSoftClick } from '../audio.js';
+import { playFindChime, playMiss, playSoftClick, playDecoTap } from '../audio.js';
 
 export function renderRoom(goTo, params) {
   const room = ROOMS[params.roomId];
@@ -38,6 +38,23 @@ export function renderRoom(goTo, params) {
   bg.src = room.background;
   bg.alt = '';
   stage.appendChild(bg);
+
+  // Decoration layer (non-findable scatter). Rendered before placements so
+  // findables stack above and decoration clicks don't shadow them.
+  (room.decorations || []).forEach((d) => {
+    const el = document.createElement('img');
+    el.className = 'room-deco';
+    el.src = d.src;
+    el.alt = '';
+    el.style.left = d.x + '%';
+    el.style.top = d.y + '%';
+    el.style.width = d.w + '%';
+    el.addEventListener('click', (ev) => {
+      playDecoTap();
+      showDecoLabel(d, ev);
+    });
+    stage.appendChild(el);
+  });
 
   // Render every placement as an absolutely-positioned <img>
   const objectEls = room.placements.map((p) => {
@@ -121,6 +138,20 @@ export function renderRoom(goTo, params) {
       // small delay so the popup flashes before showing next target
       setTimeout(updateTargetUI, 200);
     }
+  }
+
+  function showDecoLabel(d, ev) {
+    if (!d || !d.name) return;
+    const label = document.createElement('div');
+    label.className = 'deco-label';
+    label.textContent = d.name;
+    const rect = stage.getBoundingClientRect();
+    if (rect.width > 0 && rect.height > 0) {
+      label.style.left = (((ev.clientX - rect.left) / rect.width) * 100) + '%';
+      label.style.top  = (((ev.clientY - rect.top)  / rect.height) * 100) + '%';
+    }
+    stage.appendChild(label);
+    setTimeout(() => label.remove(), 750);
   }
 
   function showFindPopup(objectId) {

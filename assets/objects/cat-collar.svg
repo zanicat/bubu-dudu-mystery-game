@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 160" width="220" height="160">
+  <path d="M 20 70 Q 110 30 200 70 Q 200 90 110 50 Q 20 90 20 70 Z" fill="#a4c47b" stroke="#3a2a1a" stroke-width="4"/>
+  <circle cx="50" cy="68" r="5" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+  <circle cx="80" cy="60" r="5" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+  <circle cx="140" cy="60" r="5" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+  <circle cx="170" cy="68" r="5" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+  <circle cx="110" cy="80" r="14" fill="#f5b461" stroke="#7c4f1a" stroke-width="3"/>
+  <path d="M 110 88 L 110 130 L 100 132 Z" fill="#f5b461" stroke="#7c4f1a" stroke-width="2"/>
+  <text x="110" y="86" text-anchor="middle" font-size="11" font-family="Quicksand, sans-serif" font-weight="bold" fill="#7c4f1a">D</text>
+</svg>
