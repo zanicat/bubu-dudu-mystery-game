@@ -317,10 +317,7 @@ img { user-select: none; -webkit-user-drag: none; }
   cursor: crosshair;
   user-select: none;
 }
-.hidden-region:hover {
-  outline: 2px dashed rgba(255, 220, 80, 0.35);
-  border-radius: 4px;
-}
+.hidden-region:hover {}
 .region-miss {
   animation: regionMiss 420ms ease;
 }
