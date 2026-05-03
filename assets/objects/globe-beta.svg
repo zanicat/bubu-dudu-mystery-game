@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <rect x="86" y="170" width="28" height="36" rx="3" fill="#7c5530" stroke="#3a2a1a" stroke-width="3"/>
+  <rect x="60" y="200" width="80" height="14" rx="4" fill="#5a3e22" stroke="#3a2a1a" stroke-width="3"/>
+  <line x1="100" y1="40" x2="100" y2="170" stroke="#7c5530" stroke-width="3" stroke-dasharray="4 3"/>
+  <circle cx="100" cy="100" r="72" fill="#7e9ec9" stroke="#2a4a7c" stroke-width="5"/>
+  <!-- continents -->
+  <path d="M 40 80 Q 60 68 80 76 Q 90 80 92 96 Q 84 106 68 102 Q 48 96 40 80 Z" fill="#a4c47b" stroke="#3a5a2a" stroke-width="2"/>
+  <path d="M 100 60 Q 120 56 130 70 Q 136 84 126 92 Q 112 96 102 86 Q 92 74 100 60 Z" fill="#a4c47b" stroke="#3a5a2a" stroke-width="2"/>
+  <path d="M 108 110 Q 130 106 148 118 Q 158 132 148 144 Q 132 152 116 144 Q 102 132 108 110 Z" fill="#a4c47b" stroke="#3a5a2a" stroke-width="2"/>
+  <!-- latitude lines -->
+  <ellipse cx="100" cy="100" rx="72" ry="20" fill="none" stroke="#2a4a7c" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="100" cy="100" rx="72" ry="48" fill="none" stroke="#2a4a7c" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="44" cy="76" rx="18" ry="6" fill="#fff" opacity="0.45"/>
+</svg>

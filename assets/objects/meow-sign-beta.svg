@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" width="240" height="140">
+  <rect x="8" y="8" width="224" height="124" rx="10" fill="#fff5da" stroke="#7c5530" stroke-width="5"/>
+  <rect x="16" y="16" width="208" height="108" rx="6" fill="#fff8eb"/>
+  <!-- banner stripes top -->
+  <rect x="16" y="16" width="208" height="18" rx="6" fill="#f5b461"/>
+  <!-- paw prints scattered -->
+  <ellipse cx="40" cy="104" rx="8" ry="6" fill="#e8a460" opacity="0.5"/>
+  <circle cx="30" cy="94" r="3.5" fill="#e8a460" opacity="0.5"/>
+  <circle cx="40" cy="90" r="3.5" fill="#e8a460" opacity="0.5"/>
+  <circle cx="50" cy="94" r="3.5" fill="#e8a460" opacity="0.5"/>
+  <ellipse cx="200" cy="104" rx="8" ry="6" fill="#e8a460" opacity="0.5"/>
+  <circle cx="190" cy="94" r="3.5" fill="#e8a460" opacity="0.5"/>
+  <circle cx="200" cy="90" r="3.5" fill="#e8a460" opacity="0.5"/>
+  <circle cx="210" cy="94" r="3.5" fill="#e8a460" opacity="0.5"/>
+  <!-- MEOW text -->
+  <text x="120" y="90" text-anchor="middle" font-size="56" font-family="Quicksand, sans-serif" font-weight="bold" fill="#a85a55">MEOW</text>
+  <!-- hanging strings -->
+  <line x1="60" y1="8" x2="60" y2="0" stroke="#7c5530" stroke-width="2"/>
+  <line x1="120" y1="8" x2="120" y2="0" stroke="#7c5530" stroke-width="2"/>
+  <line x1="180" y1="8" x2="180" y2="0" stroke="#7c5530" stroke-width="2"/>
+</svg>

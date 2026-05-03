@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="110" r="68" fill="#fff5da" stroke="#7c5530" stroke-width="5"/>
+  <circle cx="100" cy="110" r="54" fill="#fff8eb" stroke="#7c5530" stroke-width="2"/>
+  <text x="100" y="76" text-anchor="middle" font-size="12" font-family="serif" font-weight="bold" fill="#3a2a1a">12</text>
+  <text x="146" y="118" text-anchor="middle" font-size="12" font-family="serif" font-weight="bold" fill="#3a2a1a">3</text>
+  <text x="100" y="164" text-anchor="middle" font-size="12" font-family="serif" font-weight="bold" fill="#3a2a1a">6</text>
+  <text x="54" y="118" text-anchor="middle" font-size="12" font-family="serif" font-weight="bold" fill="#3a2a1a">9</text>
+  <line x1="100" y1="110" x2="100" y2="72" stroke="#3a2a1a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="110" x2="126" y2="118" stroke="#a85a55" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="110" r="5" fill="#a85a55"/>
+  <!-- bell tops -->
+  <circle cx="60" cy="52" r="14" fill="#f5b461" stroke="#7c4f1a" stroke-width="3"/>
+  <circle cx="140" cy="52" r="14" fill="#f5b461" stroke="#7c4f1a" stroke-width="3"/>
+  <!-- legs -->
+  <line x1="72" y1="176" x2="64" y2="192" stroke="#7c5530" stroke-width="4" stroke-linecap="round"/>
+  <line x1="128" y1="176" x2="136" y2="192" stroke="#7c5530" stroke-width="4" stroke-linecap="round"/>
+</svg>

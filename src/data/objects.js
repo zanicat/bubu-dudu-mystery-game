@@ -83,11 +83,95 @@ export const OBJECTS = {
     displayName: 'Pink Ribbon',
     image: 'assets/objects/ribbon.svg',
   },
+
+  // ── Dudu beta findables ──────────────────────────────────────────────────
+  'alarm-clock-beta': {
+    id: 'alarm-clock-beta',
+    displayName: 'Alarm Clock',
+    image: 'assets/objects/alarm-clock-beta.svg',
+  },
+  'globe-beta': {
+    id: 'globe-beta',
+    displayName: 'Globe',
+    image: 'assets/objects/globe-beta.svg',
+  },
+  'cat-bowl-beta': {
+    id: 'cat-bowl-beta',
+    displayName: 'Cat Bowl',
+    image: 'assets/objects/cat-bowl-beta.svg',
+  },
+  'blue-yarn-beta': {
+    id: 'blue-yarn-beta',
+    displayName: 'Blue Yarn Ball',
+    image: 'assets/objects/blue-yarn-beta.svg',
+  },
+  'cat-stories-book': {
+    id: 'cat-stories-book',
+    displayName: 'Cat Stories Book',
+    image: 'assets/objects/cat-stories-book.svg',
+  },
+  'teddy-bear-beta': {
+    id: 'teddy-bear-beta',
+    displayName: 'Teddy Bear',
+    image: 'assets/objects/teddy-bear-beta.svg',
+  },
+  'pencil-cup-beta': {
+    id: 'pencil-cup-beta',
+    displayName: 'Pencil Cup',
+    image: 'assets/objects/pencil-cup-beta.svg',
+  },
+  'meow-sign-beta': {
+    id: 'meow-sign-beta',
+    displayName: 'MEOW Sign',
+    image: 'assets/objects/meow-sign-beta.svg',
+  },
+
+  // ── Bubu beta findables ──────────────────────────────────────────────────
+  'teapot-beta': {
+    id: 'teapot-beta',
+    displayName: 'Teapot',
+    image: 'assets/objects/teapot-beta.svg',
+  },
+  'lavender-vase': {
+    id: 'lavender-vase',
+    displayName: 'Lavender Vase',
+    image: 'assets/objects/lavender-vase.svg',
+  },
+  'bunny-stuffed': {
+    id: 'bunny-stuffed',
+    displayName: 'Stuffed Bunny',
+    image: 'assets/objects/bunny-stuffed.svg',
+  },
+  'bunny-slippers': {
+    id: 'bunny-slippers',
+    displayName: 'Bunny Slippers',
+    image: 'assets/objects/bunny-slippers.svg',
+  },
+  'moon-journal': {
+    id: 'moon-journal',
+    displayName: 'Moon Journal',
+    image: 'assets/objects/moon-journal.svg',
+  },
+  'candle-trio': {
+    id: 'candle-trio',
+    displayName: 'Candle Trio',
+    image: 'assets/objects/candle-trio.svg',
+  },
+  'basket-weave': {
+    id: 'basket-weave',
+    displayName: 'Woven Basket',
+    image: 'assets/objects/basket-weave.svg',
+  },
+  'purple-pillow-beta': {
+    id: 'purple-pillow-beta',
+    displayName: 'Purple Pouf',
+    image: 'assets/objects/purple-pillow-beta.svg',
+  },
 };
 
 // Order matters: this is the gallery display order
 export const ALL_OBJECT_IDS = [
-  // Dudu's room
+  // Dudu's room (classic)
   'cat-treats',
   'cat-orange',
   'cat-white-markings',
@@ -96,7 +180,7 @@ export const ALL_OBJECT_IDS = [
   'mouse-toy',
   'paw-print',
   'cat-collar',
-  // Bubu's room
+  // Bubu's room (classic)
   'sushi',
   'sleeping-pillow',
   'dudu-plushie',
@@ -105,4 +189,22 @@ export const ALL_OBJECT_IDS = [
   'book-bubu',
   'flower',
   'ribbon',
+  // Dudu's room (beta)
+  'alarm-clock-beta',
+  'globe-beta',
+  'cat-bowl-beta',
+  'blue-yarn-beta',
+  'cat-stories-book',
+  'teddy-bear-beta',
+  'pencil-cup-beta',
+  'meow-sign-beta',
+  // Bubu's room (beta)
+  'teapot-beta',
+  'lavender-vase',
+  'bunny-stuffed',
+  'bunny-slippers',
+  'moon-journal',
+  'candle-trio',
+  'basket-weave',
+  'purple-pillow-beta',
 ];

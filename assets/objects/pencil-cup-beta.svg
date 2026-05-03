@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" width="160" height="200">
+  <!-- cup -->
+  <path d="M 28 80 L 36 180 Q 36 192 80 192 Q 124 192 124 180 L 132 80 Z" fill="#e2a9b3" stroke="#7c4f6a" stroke-width="4"/>
+  <ellipse cx="80" cy="80" rx="52" ry="12" fill="#c98ea8" stroke="#7c4f6a" stroke-width="4"/>
+  <!-- heart on cup -->
+  <path d="M 68 126 C 68 118, 80 116, 80 126 C 80 116, 92 118, 92 126 L 80 140 Z" fill="#fff" opacity="0.6"/>
+  <!-- pencils -->
+  <!-- pencil 1 yellow -->
+  <rect x="55" y="12" width="10" height="72" fill="#f3d985" stroke="#7c4f1a" stroke-width="2"/>
+  <polygon points="55,12 65,12 60,0" fill="#e9d8c0"/>
+  <rect x="55" y="68" width="10" height="8" fill="#bbb" stroke="#444" stroke-width="1"/>
+  <rect x="55" y="76" width="10" height="8" fill="#e88da6"/>
+  <!-- pencil 2 blue -->
+  <rect x="70" y="6" width="10" height="76" fill="#7e9ec9" stroke="#2a4a7c" stroke-width="2"/>
+  <polygon points="70,6 80,6 75,0" fill="#e9d8c0"/>
+  <rect x="70" y="74" width="10" height="8" fill="#bbb" stroke="#444" stroke-width="1"/>
+  <!-- pencil 3 green -->
+  <rect x="85" y="10" width="10" height="72" fill="#a4c47b" stroke="#3a5a2a" stroke-width="2"/>
+  <polygon points="85,10 95,10 90,0" fill="#e9d8c0"/>
+  <rect x="85" y="72" width="10" height="8" fill="#bbb" stroke="#444" stroke-width="1"/>
+  <!-- pencil 4 red -->
+  <rect x="100" y="14" width="10" height="68" fill="#d96b6b" stroke="#7c2a2a" stroke-width="2"/>
+  <polygon points="100,14 110,14 105,0" fill="#e9d8c0"/>
+</svg>

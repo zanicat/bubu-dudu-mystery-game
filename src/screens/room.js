@@ -7,6 +7,7 @@ export function renderRoom(goTo, params) {
   const room = ROOMS[params.roomId];
   if (!room) { goTo('menu'); return document.createElement('div'); }
 
+  const isBeta = !!room.isBeta;
   let currentIndex = 0;
   let remaining = room.placements.length;
   let popupTimer = null;
@@ -15,12 +16,12 @@ export function renderRoom(goTo, params) {
   root.className = 'screen room-screen';
 
   const topbar = document.createElement('div');
-  topbar.className = 'room-topbar';
+  topbar.className = 'room-topbar' + (isBeta ? ' room-topbar--beta' : '');
   topbar.innerHTML = `
     <div class="title">${room.title}</div>
     <div class="target">
       <span class="target-label">find:</span>
-      <div class="target-silhouette"><img alt=""/></div>
+      ${isBeta ? '' : '<div class="target-silhouette"><img alt=""/></div>'}
       <span class="target-name"></span>
     </div>
     <div class="progress"><span class="found-count">0</span> / ${room.placements.length}</div>
@@ -31,6 +32,9 @@ export function renderRoom(goTo, params) {
   stageWrap.className = 'room-stage-wrap';
   const stage = document.createElement('div');
   stage.className = 'room-stage';
+  if (new URLSearchParams(location.search).get('debug') === '1') {
+    stage.classList.add('debug-regions');
+  }
   stageWrap.appendChild(stage);
 
   const bg = document.createElement('img');
@@ -56,17 +60,31 @@ export function renderRoom(goTo, params) {
     stage.appendChild(el);
   });
 
-  // Render every placement as an absolutely-positioned <img>
+  // Render placements. Classic rooms: visible <img> sprites. Beta rooms:
+  // invisible <div> hotspots directly over the painted background art.
   const objectEls = room.placements.map((p) => {
     const obj = OBJECTS[p.objectId];
-    const el = document.createElement('img');
-    el.className = 'hidden-obj';
-    el.src = obj.image;
-    el.alt = obj.displayName;
-    el.dataset.objectId = obj.id;
-    el.style.left = p.x + '%';
-    el.style.top = p.y + '%';
-    el.style.width = p.w + '%';
+    let el;
+
+    if (isBeta) {
+      el = document.createElement('div');
+      el.className = 'hidden-region';
+      el.title = '';           // no tooltip spoiler
+      el.style.left   = p.x + '%';
+      el.style.top    = p.y + '%';
+      el.style.width  = p.w + '%';
+      el.style.height = (p.h || p.w) + '%';
+    } else {
+      el = document.createElement('img');
+      el.className = 'hidden-obj';
+      el.src = obj.image;
+      el.alt = obj.displayName;
+      el.dataset.objectId = obj.id;
+      el.style.left  = p.x + '%';
+      el.style.top   = p.y + '%';
+      el.style.width = p.w + '%';
+    }
+
     el.addEventListener('click', () => onClickObject(p, el));
     stage.appendChild(el);
     return el;
@@ -93,13 +111,15 @@ export function renderRoom(goTo, params) {
     const countEl = topbar.querySelector('.found-count');
     countEl.textContent = String(room.placements.length - remaining);
     if (!next) {
-      targetImg.style.display = 'none';
+      if (targetImg) targetImg.style.display = 'none';
       nameEl.textContent = 'all found!';
       return;
     }
     const obj = OBJECTS[next.objectId];
-    targetImg.style.display = '';
-    targetImg.src = obj.image;
+    if (targetImg) {
+      targetImg.style.display = '';
+      targetImg.src = obj.image;
+    }
     nameEl.textContent = obj.displayName;
   }
 
@@ -107,9 +127,17 @@ export function renderRoom(goTo, params) {
     const target = room.placements[currentIndex];
     if (!target) return;
     if (placement.objectId !== target.objectId) {
-      el.classList.remove('shake');
-      void el.offsetWidth;
-      el.classList.add('shake');
+      // Wrong target
+      if (isBeta) {
+        // Flash a brief red tint at click location instead of shaking a sprite
+        el.classList.remove('region-miss');
+        void el.offsetWidth;
+        el.classList.add('region-miss');
+      } else {
+        el.classList.remove('shake');
+        void el.offsetWidth;
+        el.classList.add('shake');
+      }
       playMiss();
       return;
     }
@@ -117,27 +145,52 @@ export function renderRoom(goTo, params) {
     // Correct find
     playFindChime();
     state.markFound(placement.objectId);
-    el.classList.add('poof');
-    setTimeout(() => { el.style.display = 'none'; }, 700);
+
+    if (isBeta) {
+      // Show expanding ring over the found region, then disable the hotspot
+      showFindRing(placement, el);
+      el.style.pointerEvents = 'none';
+    } else {
+      el.classList.add('poof');
+      setTimeout(() => { el.style.display = 'none'; }, 700);
+    }
+
     showFindPopup(placement.objectId);
     remaining -= 1;
     currentIndex += 1;
 
     if (remaining === 0) {
-      // small delay to let the chime / poof finish before transitioning
       setTimeout(() => {
         if (room.id === 'dudu') {
           state.setLevelComplete(1);
           goTo('story', { which: 'outro-dudu' });
-        } else {
+        } else if (room.id === 'bubu') {
           state.setLevelComplete(2);
           goTo('story', { which: 'outro-bubu' });
+        } else if (room.id === 'dudu-beta') {
+          goTo('room', { roomId: 'bubu-beta' });
+        } else {
+          goTo('menu');
         }
       }, 1700);
     } else {
-      // small delay so the popup flashes before showing next target
       setTimeout(updateTargetUI, 200);
     }
+  }
+
+  function showFindRing(placement, hotspot) {
+    const ring = document.createElement('div');
+    ring.className = 'beta-find-ring';
+    const cx = placement.x + (placement.w / 2);
+    const cy = placement.y + ((placement.h || placement.w) / 2);
+    ring.style.left = cx + '%';
+    ring.style.top  = cy + '%';
+    // Ring diameter roughly matches the hotspot width
+    const size = placement.w * 1.4;
+    ring.style.width  = size + '%';
+    ring.style.height = size + '%';
+    stage.appendChild(ring);
+    setTimeout(() => ring.remove(), 800);
   }
 
   function showDecoLabel(d, ev) {

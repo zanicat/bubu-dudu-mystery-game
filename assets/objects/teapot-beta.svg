@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" width="220" height="180">
+  <!-- body -->
+  <ellipse cx="106" cy="106" rx="74" ry="56" fill="#e9dcfb" stroke="#5e3a8a" stroke-width="4"/>
+  <!-- lid -->
+  <ellipse cx="106" cy="62" rx="38" ry="10" fill="#c8a4e4" stroke="#5e3a8a" stroke-width="3"/>
+  <rect x="92" y="40" width="28" height="24" rx="5" fill="#e9dcfb" stroke="#5e3a8a" stroke-width="3"/>
+  <circle cx="106" cy="40" r="9" fill="#a880cf" stroke="#5e3a8a" stroke-width="2"/>
+  <!-- spout -->
+  <path d="M 32 90 Q 8 80 8 106 Q 8 126 28 120" fill="#e9dcfb" stroke="#5e3a8a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- handle -->
+  <path d="M 180 80 Q 214 80 214 106 Q 214 132 180 130" fill="none" stroke="#5e3a8a" stroke-width="7" stroke-linecap="round"/>
+  <!-- floral decoration -->
+  <circle cx="106" cy="106" r="18" fill="none" stroke="#a880cf" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="106" cy="90" r="5" fill="#e88da6"/>
+  <circle cx="106" cy="122" r="5" fill="#e88da6"/>
+  <circle cx="90" cy="106" r="5" fill="#a4c47b"/>
+  <circle cx="122" cy="106" r="5" fill="#a4c47b"/>
+  <circle cx="106" cy="106" r="4" fill="#f3d985"/>
+  <ellipse cx="68" cy="76" rx="18" ry="7" fill="#fff" opacity="0.5"/>
+</svg>

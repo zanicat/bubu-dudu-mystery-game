@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" width="200" height="260">
+  <!-- body -->
+  <ellipse cx="100" cy="186" rx="64" ry="56" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <!-- belly -->
+  <ellipse cx="100" cy="196" rx="40" ry="32" fill="#fef0f6"/>
+  <!-- head -->
+  <circle cx="100" cy="108" r="62" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <!-- ears -->
+  <ellipse cx="60" cy="30" rx="18" ry="40" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <ellipse cx="140" cy="30" rx="18" ry="40" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <ellipse cx="60" cy="30" rx="10" ry="30" fill="#e2a9b3"/>
+  <ellipse cx="140" cy="30" rx="10" ry="30" fill="#e2a9b3"/>
+  <!-- eyes -->
+  <circle cx="82" cy="106" r="7" fill="#1a1208"/>
+  <circle cx="118" cy="106" r="7" fill="#1a1208"/>
+  <circle cx="83" cy="103" r="2" fill="#fff"/>
+  <circle cx="119" cy="103" r="2" fill="#fff"/>
+  <!-- nose -->
+  <ellipse cx="100" cy="120" rx="5" ry="4" fill="#e88da6"/>
+  <!-- mouth -->
+  <path d="M 88 128 Q 100 136 112 128" stroke="#7e6650" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- bow tie -->
+  <path d="M 84 150 L 100 157 L 116 150 L 116 164 L 100 157 L 84 164 Z" fill="#c8a4e4" stroke="#5e3a8a" stroke-width="2"/>
+  <circle cx="100" cy="157" r="4" fill="#5e3a8a"/>
+  <!-- arms -->
+  <ellipse cx="44" cy="186" rx="14" ry="26" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <ellipse cx="156" cy="186" rx="14" ry="26" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <!-- feet -->
+  <ellipse cx="72" cy="240" rx="24" ry="14" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+  <ellipse cx="128" cy="240" rx="24" ry="14" fill="#fff" stroke="#7e6650" stroke-width="3"/>
+</svg>

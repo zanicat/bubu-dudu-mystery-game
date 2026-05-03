@@ -63,6 +63,40 @@ export const ROOMS = {
     ],
   },
 
+  'dudu-beta': {
+    id: 'dudu-beta',
+    isBeta: true,
+    title: "Dudu's Room ✦ Beta",
+    background: 'dudu_room_gen.png',
+    placements: [
+      { objectId: 'meow-sign-beta',   x: 50, y: 5,  w: 10, h: 7  },
+      { objectId: 'alarm-clock-beta', x: 6,  y: 40, w: 5,  h: 8  },
+      { objectId: 'pencil-cup-beta',  x: 17, y: 38, w: 5,  h: 9  },
+      { objectId: 'cat-stories-book', x: 3,  y: 65, w: 9,  h: 11 },
+      { objectId: 'globe-beta',       x: 1,  y: 54, w: 11, h: 17 },
+      { objectId: 'blue-yarn-beta',   x: 35, y: 63, w: 6,  h: 7  },
+      { objectId: 'cat-bowl-beta',    x: 46, y: 72, w: 7,  h: 7  },
+      { objectId: 'teddy-bear-beta',  x: 73, y: 36, w: 9,  h: 14 },
+    ],
+  },
+
+  'bubu-beta': {
+    id: 'bubu-beta',
+    isBeta: true,
+    title: "Bubu's Room ✦ Beta",
+    background: 'bubu_room_gen.png',
+    placements: [
+      { objectId: 'basket-weave',       x: 5,  y: 48, w: 10, h: 15 },
+      { objectId: 'candle-trio',        x: 31, y: 44, w: 7,  h: 9  },
+      { objectId: 'lavender-vase',      x: 43, y: 34, w: 10, h: 18 },
+      { objectId: 'teapot-beta',        x: 38, y: 41, w: 10, h: 12 },
+      { objectId: 'purple-pillow-beta', x: 24, y: 61, w: 15, h: 16 },
+      { objectId: 'moon-journal',       x: 35, y: 71, w: 9,  h: 10 },
+      { objectId: 'bunny-slippers',     x: 17, y: 74, w: 11, h: 10 },
+      { objectId: 'bunny-stuffed',      x: 83, y: 51, w: 8,  h: 16 },
+    ],
+  },
+
   bubu: {
     id: 'bubu',
     title: "Bubu's Room",

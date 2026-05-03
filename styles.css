@@ -103,6 +103,7 @@ img { user-select: none; -webkit-user-drag: none; }
 .btn:active { transform: translateY(1px); }
 .btn.primary { background: linear-gradient(180deg, #ffd28a, #f3a76a); }
 .btn.bonus  { background: linear-gradient(180deg, #d8c4f4, #b694e4); border-color: #5a3a8a; color: #3a2960; }
+.btn.beta   { background: linear-gradient(180deg, #c8a4e4, #7c4f9e); border-color: #3a1a6a; color: #fff; letter-spacing: 0.5px; }
 .btn.ghost  { background: transparent; border-color: var(--ink-soft); color: var(--ink-soft); }
 
 /* ========== Story screen ========== */
@@ -310,6 +311,41 @@ img { user-select: none; -webkit-user-drag: none; }
   80% { transform: translateX(4px); }
 }
 
+/* ── Beta room: invisible hotspots ── */
+.hidden-region {
+  position: absolute;
+  cursor: crosshair;
+  user-select: none;
+}
+.hidden-region:hover {
+  outline: 2px dashed rgba(255, 220, 80, 0.35);
+  border-radius: 4px;
+}
+.region-miss {
+  animation: regionMiss 420ms ease;
+}
+@keyframes regionMiss {
+  0%   { background: rgba(220, 60, 60, 0); }
+  20%  { background: rgba(220, 60, 60, 0.30); }
+  100% { background: rgba(220, 60, 60, 0); }
+}
+
+/* ── Beta find ring ── */
+.beta-find-ring {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid gold;
+  box-shadow: 0 0 12px 4px rgba(255, 200, 0, 0.55);
+  pointer-events: none;
+  animation: ringPop 800ms ease forwards;
+}
+@keyframes ringPop {
+  0%   { transform: translate(-50%, -50%) scale(0.8); opacity: 1; }
+  70%  { opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
+}
+
 /* find popup */
 .find-popup {
   position: absolute;
@@ -463,6 +499,12 @@ img { user-select: none; -webkit-user-drag: none; }
 /* ========== Utility ========== */
 .fade-in { animation: fadeIn 320ms ease; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Dev calibration — enable with ?debug=1 */
+.room-stage.debug-regions .hidden-region {
+  background: rgba(255, 80, 80, 0.25);
+  outline: 2px solid rgba(255, 80, 80, 0.8);
+}
 
 @media (max-width: 720px) {
   .menu .character-strip img { width: 96px; height: 96px; }

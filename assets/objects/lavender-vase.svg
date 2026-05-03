@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 240" width="180" height="240">
+  <!-- vase body -->
+  <path d="M 50 110 Q 36 160 40 200 Q 40 218 90 220 Q 140 218 140 200 Q 144 160 130 110 Z" fill="#c8a4e4" stroke="#5e3a8a" stroke-width="4"/>
+  <!-- vase neck -->
+  <rect x="66" y="86" width="48" height="28" rx="4" fill="#a880cf" stroke="#5e3a8a" stroke-width="4"/>
+  <!-- vase rim -->
+  <ellipse cx="90" cy="86" rx="28" ry="8" fill="#c8a4e4" stroke="#5e3a8a" stroke-width="3"/>
+  <!-- floral pattern on vase -->
+  <ellipse cx="90" cy="168" rx="30" ry="24" fill="none" stroke="#e9dcfb" stroke-width="2.5"/>
+  <circle cx="90" cy="156" r="5" fill="#e9dcfb" opacity="0.7"/>
+  <circle cx="78" cy="174" r="4" fill="#e9dcfb" opacity="0.7"/>
+  <circle cx="102" cy="174" r="4" fill="#e9dcfb" opacity="0.7"/>
+  <!-- stems -->
+  <line x1="90" y1="86" x2="60" y2="30" stroke="#5a8d3a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="86" x2="90" y2="20" stroke="#5a8d3a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="86" x2="120" y2="28" stroke="#5a8d3a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="86" x2="50" y2="50" stroke="#5a8d3a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="86" x2="130" y2="50" stroke="#5a8d3a" stroke-width="3" stroke-linecap="round"/>
+  <!-- lavender flowers -->
+  <ellipse cx="60" cy="26" rx="10" ry="14" fill="#a880cf" stroke="#5e3a8a" stroke-width="2"/>
+  <ellipse cx="90" cy="14" rx="10" ry="14" fill="#a880cf" stroke="#5e3a8a" stroke-width="2"/>
+  <ellipse cx="120" cy="24" rx="10" ry="14" fill="#c8a4e4" stroke="#5e3a8a" stroke-width="2"/>
+  <ellipse cx="48" cy="46" rx="8" ry="12" fill="#c8a4e4" stroke="#5e3a8a" stroke-width="2"/>
+  <ellipse cx="132" cy="46" rx="8" ry="12" fill="#a880cf" stroke="#5e3a8a" stroke-width="2"/>
+  <ellipse cx="60" cy="70" rx="28" ry="8" fill="#fff" opacity="0.45"/>
+</svg>

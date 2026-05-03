@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- body -->
+  <ellipse cx="100" cy="170" rx="60" ry="52" fill="#c8a070" stroke="#7c5530" stroke-width="3"/>
+  <!-- belly -->
+  <ellipse cx="100" cy="180" rx="38" ry="28" fill="#e8c898"/>
+  <!-- head -->
+  <circle cx="100" cy="94" r="60" fill="#c8a070" stroke="#7c5530" stroke-width="3"/>
+  <!-- ears -->
+  <circle cx="52" cy="50" r="20" fill="#c8a070" stroke="#7c5530" stroke-width="3"/>
+  <circle cx="148" cy="50" r="20" fill="#c8a070" stroke="#7c5530" stroke-width="3"/>
+  <circle cx="52" cy="50" r="12" fill="#e8c898"/>
+  <circle cx="148" cy="50" r="12" fill="#e8c898"/>
+  <!-- eyes -->
+  <circle cx="82" cy="90" r="8" fill="#1a1208"/>
+  <circle cx="118" cy="90" r="8" fill="#1a1208"/>
+  <circle cx="84" cy="87" r="2.5" fill="#fff"/>
+  <circle cx="120" cy="87" r="2.5" fill="#fff"/>
+  <!-- nose -->
+  <ellipse cx="100" cy="106" rx="7" ry="5" fill="#3a2a1a"/>
+  <!-- mouth -->
+  <path d="M 86 114 Q 100 124 114 114" stroke="#3a2a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- arms -->
+  <ellipse cx="48" cy="168" rx="16" ry="26" fill="#c8a070" stroke="#7c5530" stroke-width="3"/>
+  <ellipse cx="152" cy="168" rx="16" ry="26" fill="#c8a070" stroke="#7c5530" stroke-width="3"/>
+  <!-- ribbon -->
+  <path d="M 82 148 L 100 154 L 118 148 L 118 162 L 100 156 L 82 162 Z" fill="#e88da6" stroke="#7c4f6a" stroke-width="2"/>
+  <circle cx="100" cy="155" r="4" fill="#7c4f6a"/>
+</svg>

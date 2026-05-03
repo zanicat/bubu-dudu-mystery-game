@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160">
+  <ellipse cx="100" cy="150" rx="88" ry="8" fill="#7c5530" opacity="0.3"/>
+  <path d="M 18 80 Q 18 138 100 142 Q 182 138 182 80 Z" fill="#f5b461" stroke="#7c4f1a" stroke-width="4"/>
+  <ellipse cx="100" cy="80" rx="82" ry="18" fill="#e8a460" stroke="#7c4f1a" stroke-width="4"/>
+  <!-- kibble dots in bowl -->
+  <circle cx="70" cy="100" r="7" fill="#a87b5c"/>
+  <circle cx="90" cy="108" r="6" fill="#c89a72"/>
+  <circle cx="112" cy="102" r="7" fill="#a87b5c"/>
+  <circle cx="130" cy="110" r="5" fill="#c89a72"/>
+  <circle cx="80" cy="118" r="5" fill="#a87b5c"/>
+  <circle cx="118" cy="118" r="6" fill="#c89a72"/>
+  <!-- MEOW text on bowl side -->
+  <text x="100" y="73" text-anchor="middle" font-size="16" font-family="Quicksand, sans-serif" font-weight="bold" fill="#7c4f1a">MEOW</text>
+  <!-- paw print on front -->
+  <ellipse cx="100" cy="58" rx="8" ry="6" fill="#7c4f1a" opacity="0.5"/>
+  <circle cx="90" cy="50" r="3" fill="#7c4f1a" opacity="0.5"/>
+  <circle cx="100" cy="47" r="3" fill="#7c4f1a" opacity="0.5"/>
+  <circle cx="110" cy="50" r="3" fill="#7c4f1a" opacity="0.5"/>
+</svg>
