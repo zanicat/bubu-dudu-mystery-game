@@ -167,6 +167,43 @@ export const OBJECTS = {
     displayName: 'Purple Pouf',
     image: 'assets/objects/purple-pillow-beta.svg',
   },
+
+  // ── Bubu Matters findables ───────────────────────────────────────────────
+  'banners': {
+    id: 'banners',
+    displayName: 'Banners',
+    image: 'dudu_room_beta_assets/banners.PNG',
+  },
+  'calico-mug': {
+    id: 'calico-mug',
+    displayName: 'Calico Mug',
+    image: 'dudu_room_beta_assets/calico_mug.PNG',
+  },
+  'coat-of-arms': {
+    id: 'coat-of-arms',
+    displayName: 'Coat of Arms',
+    image: 'dudu_room_beta_assets/coat_of_arms.PNG',
+  },
+  'globe': {
+    id: 'globe',
+    displayName: 'Globe',
+    image: 'dudu_room_beta_assets/globe.PNG',
+  },
+  'ivy': {
+    id: 'ivy',
+    displayName: 'Ivy',
+    image: 'dudu_room_beta_assets/ivy.PNG',
+  },
+  'sneakers': {
+    id: 'sneakers',
+    displayName: 'Sneakers',
+    image: 'dudu_room_beta_assets/sneakers.PNG',
+  },
+  'tanooki-tail': {
+    id: 'tanooki-tail',
+    displayName: 'Tanooki Tail',
+    image: 'dudu_room_beta_assets/tanooki_tail.PNG',
+  },
 };
 
 // Order matters: this is the gallery display order

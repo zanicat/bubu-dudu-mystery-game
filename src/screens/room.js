@@ -169,6 +169,8 @@ export function renderRoom(goTo, params) {
           goTo('story', { which: 'outro-bubu' });
         } else if (room.id === 'dudu-beta') {
           goTo('room', { roomId: 'bubu-beta' });
+        } else if (room.id === 'bubu-matters') {
+          goTo('endcard', { which: 'bubu-matters' });
         } else {
           goTo('menu');
         }

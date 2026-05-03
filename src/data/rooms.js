@@ -80,6 +80,22 @@ export const ROOMS = {
     ],
   },
 
+  'bubu-matters': {
+    id: 'bubu-matters',
+    isBeta: true,
+    title: 'Bubu Matters',
+    background: 'dudu_room_gen.png',
+    placements: [
+      { objectId: 'banners',      x: 10.8, y: 0.0,  w: 71.7, h: 10.8 },
+      { objectId: 'calico-mug',   x: 7.8,  y: 36.2, w: 2.4,  h: 3.7  },
+      { objectId: 'coat-of-arms', x: 76.1, y: 15.5, w: 4.5,  h: 11.6 },
+      { objectId: 'globe',        x: 0.5,  y: 61.6, w: 8.5,  h: 16.1 },
+      { objectId: 'ivy',          x: 94.5, y: 1.4,  w: 5.5,  h: 26.9 },
+      { objectId: 'sneakers',     x: 56.5, y: 53.9, w: 5.5,  h: 6.6  },
+      { objectId: 'tanooki-tail', x: 91.3, y: 73.9, w: 4.5,  h: 18.4 },
+    ],
+  },
+
   'bubu-beta': {
     id: 'bubu-beta',
     isBeta: true,

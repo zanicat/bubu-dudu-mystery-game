@@ -17,7 +17,7 @@ export function renderMenu(goTo) {
       ${save.level1Complete
         ? `<button class="btn bonus" data-action="bonus">⭐ Bubu's Room</button>`
         : ''}
-      <button class="btn beta" data-action="beta">✦ Play Beta</button>
+      <button class="btn beta" data-action="beta">✦ Play Bubu Matters ✦</button>
       <button class="btn" data-action="gallery">Gallery</button>
     </div>
   `;
@@ -29,7 +29,7 @@ export function renderMenu(goTo) {
     if (action === 'start') goTo('story', { which: 'intro-dudu' });
     else if (action === 'gallery') goTo('gallery');
     else if (action === 'bonus') goTo('story', { which: 'intro-bubu' });
-    else if (action === 'beta') goTo('room', { roomId: 'dudu-beta' });
+    else if (action === 'beta') goTo('room', { roomId: 'bubu-matters' });
   });
 
   return root;

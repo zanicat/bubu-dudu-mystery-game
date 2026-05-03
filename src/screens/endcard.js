@@ -8,7 +8,9 @@ export function renderEndcard(goTo, params) {
 
   const message = which === 'dudu'
     ? 'Dudu and his cats are reunited! ♡ A secret room is now waiting in the menu.'
-    : 'Both rooms found! Bubu and Dudu thank you. ✨';
+    : which === 'bubu'
+    ? 'Both rooms found! Bubu and Dudu thank you. ✨'
+    : "Bubu's things are all found! ♡ Thank you for helping Bubu.";
 
   root.innerHTML = `
     <img class="end-bg" src="assets/rooms/end-card.svg" alt=""/>
@@ -20,7 +22,7 @@ export function renderEndcard(goTo, params) {
   `;
 
   // Play the unlock fanfare on first arrival here from L1
-  if (which === 'dudu') {
+  if (which === 'dudu' || which === 'bubu-matters') {
     setTimeout(() => playUnlock(), 250);
   }
 

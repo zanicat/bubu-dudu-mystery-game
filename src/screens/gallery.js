@@ -2,8 +2,12 @@ import { OBJECTS, ALL_OBJECT_IDS } from '../data/objects.js';
 import { state } from '../state.js';
 import { playSoftClick } from '../audio.js';
 
-export function renderGallery(goTo) {
-  const save = state.get();
+export function renderGallery(goTo, params = {}) {
+  const ids = params?.objectIds || ALL_OBJECT_IDS;
+  const total = ids.length;
+  const foundCount = ids.filter(id => state.isFound(id)).length;
+  const isCustomList = !!params?.objectIds;
+
   const root = document.createElement('div');
   root.className = 'screen gallery';
   const inner = document.createElement('div');
@@ -11,10 +15,10 @@ export function renderGallery(goTo) {
   root.appendChild(inner);
 
   inner.innerHTML = `
-    <h2>Sticker Gallery</h2>
-    <p class="subtitle">found ${Object.keys(save.foundStickers).length} of ${ALL_OBJECT_IDS.length}</p>
+    <h2>${params?.title || 'Sticker Gallery'}</h2>
+    <p class="subtitle">found ${foundCount} of ${total}</p>
     <div class="grid">
-      ${ALL_OBJECT_IDS.map(id => {
+      ${ids.map(id => {
         const obj = OBJECTS[id];
         const found = state.isFound(id);
         return `
@@ -27,7 +31,7 @@ export function renderGallery(goTo) {
     </div>
     <footer>
       <button class="btn ghost" data-action="back">↩ Back to menu</button>
-      <button class="btn ghost" data-action="reset" style="font-size:13px; padding:8px 14px; border-width:1px;">Reset progress</button>
+      ${isCustomList ? '' : `<button class="btn ghost" data-action="reset" style="font-size:13px; padding:8px 14px; border-width:1px;">Reset progress</button>`}
     </footer>
   `;
 
